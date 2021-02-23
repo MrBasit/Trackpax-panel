@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <title>TrackPax | LOGICADE</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/font-awesome icons.css">
+
+
+</head>
+
+<body>
+    <!-- dashboard -->
+    <section id="user_panel" class="user_panel ">
+
+        <aside class="user_side_panel ">
+            <div class="u_p_aside_overlay"></div>
+
+            <div class="user_side_left_panel_content">
+                <div class="aside_panel_container ">
+                    <img class="user_side_panel_logo" src="./img/logo.png" alt="track pax">
+                </div>
+                <div class="user_aside_search_main">
+                    <div class="aside_panel_container user_aside_search_bar">
+                        <label for="aside_search">
+                            <i class="fas fa-search"></i>
+                        </label>
+                        <input type="search" name="aside_search" id="aside_search" placeholder="Search by Title...">
+                    </div>
+                </div>
+                <div class="user_side_bystatus aside_panel_container">
+                    <h3>
+                        <i class="fas fa-dot-circle"></i> BY STATUS
+                    </h3>
+                </div>
+                <ul class="user_side_status_collection">
+                    <li>
+                        <input type="radio" class="hidden-box" id="status_all" name="status" value="all" checked />
+                        <label for="status_all" class="check--label">
+                            <div class="user_side_status_states user_side_all_status aside_panel_container">
+                                <img src="./img/aside blue circle.png" alt="icon">
+                                All
+                                <span class="user_side_status_qty">
+                                    23
+                                </span>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" class="hidden-box" id="status_active" name="status" value="active" />
+                        <label for="status_active" class="check--label">
+                            <div class="user_side_status_states user_side_active_status aside_panel_container">
+                                <img src="./img/aside grn circle .png" alt="icon">
+                                Active
+                                <span class="user_side_status_qty">
+                                    03
+                                </span>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" class="hidden-box" id="status_delivered" name="status" value="delivered" />
+                        <label for="status_delivered" class="check--label">
+                            <div class="user_side_status_states user_side_delivered_status aside_panel_container">
+                                <img src="./img/aside org circle .png" alt="icon">
+                                Delivered
+                                <span class="user_side_status_qty">
+                                    18
+                                </span>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" class="hidden-box" id="status_cancel" name="status" value="cancelled" />
+                        <label for="status_cancel" class="check--label">
+                            <div class=" user_side_status_states user_side_cancel_status aside_panel_container">
+                                <img src="./img/aside red circle.png" alt="icon">
+                                Cancelled
+                                <span class="user_side_status_qty">
+                                    02
+                                </span>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="user_side_bytag_main aside_panel_container">
+                    <img src="./img/aside lg tag.png" alt="tag icon">
+                    BY TAGS
+                    <button id="addTagBtn"><i class="fas fa-plus-circle"></i></button>
+
+                </div>
+                <div class="user_side_tag_main aside_panel_container">
+                    <h3 class="user_side_tags_selected">
+                        <span>Tag 1</span>
+                        <span>Tag 2</span>
+                        <span>Tag 3</span>
+                    </h3>
+                    <ul class="user_side_tag_list">
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_1" />
+                            <label for="user_side_tag_1" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 1</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_2" />
+                            <label for="user_side_tag_2" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 2</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_3" />
+                            <label for="user_side_tag_3" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 3</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_4" />
+                            <label for="user_side_tag_4" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 4</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_5" />
+                            <label for="user_side_tag_5" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 5</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="hidden-box" id="user_side_tag_6" />
+                            <label for="user_side_tag_6" class="check--label">
+                                <img src="./img/tag icon black.png" alt="add icon">
+                                <span class="check--label-text">Tag 6</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="user_panel_footer_left aside_panel_container ">
+                    <button id="logoutBtn" class="logout_btn">
+                        <img src="./img/user panel logout icon.png" alt="icon"> Log Out
+                    </button>
+                </div>
+            </div>
+
+        </aside>
+        <div class="user_panel_right">
+            <div class="user_panel_right_container">
+                <div class="u_p_r_u_profile">
+                    <button class="user_panel_burger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_img">
+                        <img src="./img/user icon.png" alt="profile pic">
+
+                    </div>
+                    <div class="user_desc">
+                        <h4 class="dealership_name">Dealership's Name</h4>
+                        <p class="user_name">User name</p>
+                    </div>
+                </div>
+                <nav class="u_p_r_menu">
+                    <button id="req_id_btn" class="u_p_r_menu_itm">
+                        <i class="fas fa-plus-circle"></i> request new tracking
+                    </button>
+                    <button class="u_p_r_menu_itm">
+                        <img class="mr_md_0" src="./img/refresh icon.png" alt="icon"> <span> refresh </span>
+                    </button>
+                    <button class="u_p_r_menu_itm sort_list_btn">
+
+                        <div class="select-box">
+                            <div class="options-container">
+                                <div class="option">
+                                    <input type="radio" class="radio" id="all" name="all" />
+                                    <label for="all"><i class="fas fa-sort-numeric-up"></i> All</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="asdg" name="asending" />
+                                    <label for="asdg"><i class="fas fa-sort-numeric-up"></i> Ascending</label>
+                                </div>
+
+                                <div class="option">
+                                    <input type="radio" class="radio" id="desg" name="desending" />
+                                    <label for="desg"><i class="fas fa-sort-numeric-down-alt"></i> Descending</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="selected">
+                                <img src="./img/numeric icon.png" alt=""> sort by
+                            </div>
+                        </div>
+                    </button>
+                    <button class="u_p_r_menu_itm id_del_btn">
+                        <i class="fas fa-times mr_md_0"></i> <span>delete</span>
+                    </button>
+                </nav>
+                <div class="u_p_r_content">
+                    <div class="u_p_r_content_head u_p_r_row">
+                        <div class="u_p_r_row_col">
+
+                        </div>
+                        <div class="u_p_r_row_col">
+                            <h3>tracking id</h3>
+                        </div>
+                        <div class="u_p_r_row_col">
+                            <h3>title</h3>
+                        </div>
+                        <div class="u_p_r_row_col">
+                            <h3>description</h3>
+                        </div>
+                        <div class="u_p_r_row_col">
+                            <h3>status</h3>
+                        </div>
+                        <div class="u_p_r_row_col">
+                            <h3>tags</h3>
+                        </div>
+
+                    </div>
+                    <div class="u_p_r_content_body">
+                        <div class="u_p_r_row">
+                            <div class="u_p_r_row_col del_chkbox">
+                                <label for="id1" class="">
+                                    <input class="option_input" type="checkbox" id="id1">
+                                </label>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="trakingId">03892156</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food Delivery Packet</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3></h3>
+                            </div>
+                            <div class="u_p_r_row_col active">
+                                <h3 class="active"><img class="status_circle_icon" src="./img/chk grn icon.png"
+                                        alt="icon"> Active</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food, Packet</h3>
+                            </div>
+
+                        </div>
+                        <div class="u_p_r_row">
+                            <div class="u_p_r_row_col del_chkbox">
+                                <label for="id2" class="">
+                                    <input class="option_input" type="checkbox" id="id2">
+                                </label>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="trakingId">03892156</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food Delivery Packet</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>The packet contains 2 food items and has been wrapped in two layers</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="delivered"><img class="status_circle_icon" src="./img/van org.png"
+                                        alt="icon"> Delivered</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food, Packet</h3>
+                            </div>
+
+                        </div>
+                        <div class="u_p_r_row">
+                            <div class="u_p_r_row_col del_chkbox">
+                                <label for="id3" class="">
+                                    <input class="option_input" type="checkbox" id="id3">
+                                </label>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="trakingId">03892156</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food Delivery Packet</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>The packet contains 2 food items and has been wrapped in two layers</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="delivered"><img class="status_circle_icon" src="./img/van org.png"
+                                        alt="icon"> Delivered</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food, Packet</h3>
+                            </div>
+
+                        </div>
+                        <div class="u_p_r_row">
+                            <div class="u_p_r_row_col del_chkbox">
+                                <label for="id5" class="">
+                                    <input class="option_input" type="checkbox" id="id5">
+                                </label>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="trakingId">03892156</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food Delivery Packet</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3></h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="cancelled"><img class="status_circle_icon" src="./img/cancel icon.png"
+                                        alt="icon"> Cancelled</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food, Packet</h3>
+                            </div>
+
+                        </div>
+                        <div class="u_p_r_row">
+                            <div class="u_p_r_row_col del_chkbox">
+                                <label for="id6" class="">
+                                    <input class="option_input" type="checkbox" id="id6">
+                                </label>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3 class="trakingId">03892156</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food Delivery Packet</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3></h3>
+                            </div>
+                            <div class="u_p_r_row_col active">
+                                <h3 class="active"><img class="status_circle_icon" src="./img/chk grn icon.png"
+                                        alt="icon"> Active</h3>
+                            </div>
+                            <div class="u_p_r_row_col">
+                                <h3>Food, Packet</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="user_panel_footer_right">
+                <h3 class="user_panel_page_title">pages</h3>
+                <button class="user_panel_prev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <h3 class="user_panel_page">02</h3>
+                <button class="user_panel_next">
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <h3 class="user_panel_show_qty">showing <span> 34 </span> out off <span> 100 </span></h3>
+            </div>
+        </div>
+    </section>
+    <!-- dashboard end -->
+
+    <!-- status desc popup -->
+    <section id="status_desc" class="">
+        <div class="status_desc_overlay">
+
+        </div>
+        <div class="status_desc_card transform-out">
+            <div class="status_desc_card_header">
+                <div class="status_desc_card_container">
+                    <img class="status_desc_card_logo" src="./img/status desc logo.png" alt="logo">
+                    <p>tracking id</p>
+                    <h3 class="status_desc_card_id_text">001211AB02</h3>
+                    <p>title</p>
+                    <h3 class="status_desc_card_title_text">This is the title</h3>
+                </div>
+            </div>
+            <div class="status_desc_card_body">
+                <div class="status_desc_card_container">
+                    <p>description</p>
+                    <h3 class="status_desc_desc_text">This is the Description</h3>
+                    <p>status</p>
+                    <h3 class="status_desc_status_text">Status 1</h3>
+                    <p>tags</p>
+                    <h3 class="status_desc_tags_text">
+                        <span>Tag 1</span>
+                        <span>Tag 2</span>
+                        <span>Tag 3</span>
+                    </h3>
+                    <div class="tags_collection_main">
+                        <ul class="tags_collection_list">
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_1" />
+                                <label for="status_desc_tag_1" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 1</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_2" />
+                                <label for="status_desc_tag_2" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_3" />
+                                <label for="status_desc_tag_3" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 3</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_4" />
+                                <label for="status_desc_tag_4" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 4</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_5" />
+                                <label for="status_desc_tag_5" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 5</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="hidden-box" id="status_desc_tag_6" />
+                                <label for="status_desc_tag_6" class="check--label">
+                                    <img src="./img/tag icon black.png" alt="add icon">
+                                    <span class="check--label-text">Tag 6</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <button id="addTag" class="add_tag_btn"> add tag</button>
+                        <button id="cancelTag" class="cancel_tag_btn"> cancel</button>
+                    </div>
+                    <button id="attachTag" class="status_desc_btn"> <i class="fas fa-plus-circle"></i> attach
+                        tag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- status desc popup end -->
+    <!-- request id popup -->
+    <section id="req_id" class="">
+        <div class="req_id_overlay">
+
+        </div>
+        <div class="req_id_card transform-out">
+            <div class="req_id_card_header">
+                <div class="req_id_card_container">
+                    <img class="req_id_card_logo" src="./img/status desc logo.png" alt="logo">
+                    <h3 class="req_id_card_title">request tracking id</h3>
+                    <div class="input-div">
+                        <div>
+                            <h5>Tracking Id</h5>
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" class="radio" id="automobiles" name="category" />
+                                <label for="automobiles">Automobiles</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="film" name="category" />
+                                <label for="film">Film & Animation</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="science" name="category" />
+                                <label for="science">Science & Technology</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="art" name="category" />
+                                <label for="art">Art</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="music" name="category" />
+                                <label for="music">Music</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="travel" name="category" />
+                                <label for="travel">Travel & Events</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="sports" name="category" />
+                                <label for="sports">Sports</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="news" name="category" />
+                                <label for="news">News & Politics</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="tutorials" name="category" />
+                                <label for="tutorials">Tutorials</label>
+                            </div>
+                        </div>
+
+                        <div class="selected">
+                            Courier Services
+                        </div>
+                    </div>
+                    <div class="req_id_btns">
+                        <button class="req_id_add_btn">add btn</button>
+                        <button class="req_id_cancel_btn">cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="req_id_card_body">
+                <button id="seeAllReqIds" class="req_id_btn">see all requested id's</button>
+            </div>
+        </div>
+    </section>
+    <!-- request id popup end -->
+    <!-- all tags popup -->
+    <section id="all_tags_p" class="">
+        <div class="all_tags_p_overlay">
+
+        </div>
+        <div class="all_tags_p_card transform-out">
+            <div class="all_tags_p_card_header">
+                <div class="all_tags_p_card_container">
+                    <img class="all_tags_p_card_logo" src="./img/status desc logo.png" alt="logo">
+                    <h3 class="all_tags_card_title">add tag</h3>
+                    <div class="input-div">
+                        <div>
+                            <h5>Tag Name</h5>
+                            <input id="tagName" class="input" type="text">
+                        </div>
+                    </div>
+                    <div class="all_tags_btns">
+                        <button id="addTagBtn" class="all_tags_add_btn">add tag</button>
+                        <button id="cancelTagBtn" class="all_tags_cancel_btn">cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="all_tags_card_body">
+                <div class="all_tags_p_card_container">
+
+                    <h3 class="all_tags_card_title">all tags</h3>
+                    <div class="all_tags_collection">
+                        <div class="tags">
+                            <span>Tag 1</span>
+                            <span>Tag 2</span>
+                            <span>Tag 3</span>
+
+                            <button id="allTagDelBtn" class="tag_del_btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <button id="allTagEditBtn" class="tag_edit_btn">
+                                <i class="fa fa-pencil-alt"></i>
+                            </button>
+                        </div>
+                        <div class="tags">
+                            <span>Tag 1</span>
+                            <span>Tag 2</span>
+                            <span>Tag 3</span>
+
+                            <button id="allTagDelBtn" class="tag_del_btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <button id="allTagEditBtn" class="tag_edit_btn">
+                                <i class="fa fa-pencil-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- all tags popup end -->
+    <script>
+
+
+        // user panel side bar
+        const asidebarBtn = document.querySelector('.user_panel_burger');
+        const asidebarOverlay = document.querySelector('.u_p_aside_overlay');
+        const asidebarMain = document.querySelector('.user_panel');
+        asidebarBtn.addEventListener('click', showUserAsideBar);
+        asidebarOverlay.addEventListener('click', showUserAsideBar);
+        function showUserAsideBar() {
+            asidebarMain.classList.toggle('active');
+        }
+
+
+        // add tag popup
+        const addTagBtn = document.querySelector('#addTagBtn');
+        const addTagPopUp = document.querySelector('#all_tags_p');
+        const addTagPopUpOverlay = document.querySelector('.all_tags_p_overlay');
+
+        addTagBtn.addEventListener('click', addTagsPopUp);
+        addTagPopUpOverlay.addEventListener('click', addTagsPopUp);
+
+        function addTagsPopUp() {
+            addTagPopUp.classList.toggle('active');
+        }
+        // req to add tracking id's popup
+        const addTrackingIdBtn = document.querySelector('#req_id_btn');
+        const addTrackingIdPopUp = document.querySelector('#req_id');
+        const addTrackingIdPopUpOverlay = document.querySelector('.req_id_overlay');
+
+        addTrackingIdBtn.addEventListener('click', addTrackingIdPopUps);
+        addTrackingIdPopUpOverlay.addEventListener('click', addTrackingIdPopUps);
+
+        function addTrackingIdPopUps() {
+            addTrackingIdPopUp.classList.toggle('active');
+        }
+
+        // status desc popup
+        const statusDescBtn = document.querySelectorAll('.trakingId');
+        const statusDescPopUp = document.querySelector('#status_desc');
+        const statusDescPopUpOverlay = document.querySelector('.status_desc_overlay');
+
+        statusDescBtn.forEach(function (itm) {
+            itm.addEventListener('click', statusDescPopUps);
+        })
+        statusDescPopUpOverlay.addEventListener('click', statusDescPopUps);
+
+        function statusDescPopUps() {
+            statusDescPopUp.classList.toggle('active');
+        }
+        // attach tag 
+        const attachBtn = document.querySelector('#attachTag');
+        const addBtn = document.querySelector('#addTag');
+        const cancelBtn = document.querySelector('#cancelTag');
+        const tagCollectionMain = document.querySelector('.tags_collection_main');
+
+        attachBtn.addEventListener('click', showTagsCollection);
+        addBtn.addEventListener('click', showTagsCollection);
+        cancelBtn.addEventListener('click', showTagsCollection);
+
+        function showTagsCollection() {
+            attachBtn.classList.toggle('hide');
+            tagCollectionMain.classList.toggle('active');
+        }
+
+        // tracking id del
+        const delChkBoxes = document.querySelectorAll('.option_input');
+        const idDelBtn = document.querySelector('.id_del_btn');
+        delChkBoxes.forEach(function (itm) {
+            itm.addEventListener('click', function () {
+                console.log('ad1');
+                
+                if (this.checked) {
+                    console.log('ad');
+                    
+                    idDelBtn.classList.add('active');
+                } else {
+                    idDelBtn.classList.remove('active');
+                }
+            });
+        });
+
+    </script>
+
+
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
